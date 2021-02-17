@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const User = require('../models/user');
 const bcrypt = require('bcrypt');
-// const _ = require('underscore');
-const {verifyToken} = require('../middlewares/authentication');
+
+// const {verifyToken} = require('../middlewares/authentication');
 
 app.post('/user', function(req, res) {
     let body = req.body;
