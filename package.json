@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-p14-ms-blog-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonmatias2015/NodeJS-P14-ms-blog-auth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonmatias2015/NodeJS-P14-ms-blog-auth/issues"
+  },
+  "homepage": "https://github.com/leonmatias2015/NodeJS-P14-ms-blog-auth#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.13",
+    "mongoose-unique-validator": "^2.0.3"
+  }
+}
