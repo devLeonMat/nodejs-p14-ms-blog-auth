@@ -1,8 +1,10 @@
 const express = require('express');
-const app = express();
-const User = require('../models/user');
 const bcrypt = require('bcrypt');
+
+const User = require('../models/user');
 const jwt = require('jsonwebtoken');
+
+const app = express();
 
 app.post('/login', (req, res) => {
 
