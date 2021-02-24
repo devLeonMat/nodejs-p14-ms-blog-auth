@@ -6,7 +6,11 @@ const User = require('../models/user');
 const jwt = require('jsonwebtoken');
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+    origin: 'http://localhost:4206',
+    optionsSuccessStatus: 200 // For legacy browser support
+};
+app.use(cors(corsOptions));
 
 app.post('/login', (req, res) => {
 
