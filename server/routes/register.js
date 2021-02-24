@@ -1,9 +1,11 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
+const cors = require('cors');
 
 const User = require('../models/user');
 
 const app = express();
+app.use(cors());
 
 app.post('/user', function(req, res) {
     let body = req.body;

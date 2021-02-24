@@ -1,9 +1,11 @@
 const express = require('express');
+const cors = require('cors');
 
 const Article = require('../models/article');
 const { verifyToken } = require('../middlewares/authentication');
 
 const app = express();
+app.use(cors());
 
 app.post('/article', verifyToken, (req, res) => {
 
