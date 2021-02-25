@@ -5,13 +5,10 @@ const Article = require('../models/article');
 const { verifyToken } = require('../middlewares/authentication');
 
 const app = express();
-const corsOptions = {
-    origin: 'http://localhost:4206',
-    optionsSuccessStatus: 200 // For legacy browser support
-};
-app.use(cors(corsOptions));
 
-app.post('/article',cors(), verifyToken, (req, res) => {
+app.use(cors());
+
+app.post('/article', verifyToken, (req, res) => {
 
     let body = req.body;
 

@@ -5,11 +5,8 @@ const cors = require('cors');
 const User = require('../models/user');
 
 const app = express();
-const corsOptions = {
-    origin: 'http://localhost:4206',
-    optionsSuccessStatus: 200 // For legacy browser support
-};
-app.use(cors(corsOptions));
+
+app.use(cors());
 
 app.post('/user', function(req, res) {
     let body = req.body;
